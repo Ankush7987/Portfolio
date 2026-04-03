@@ -351,7 +351,7 @@ export default function App() {
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-5 mb-10">
                 <a href="#projects" className="bg-white text-slate-950 px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(255,255,255,0.1)] relative z-50 pointer-events-auto cursor-pointer">Explore Work</a>
-                <a href="/resume.pdf" download="Ankush_Chaurasiya_Resume.pdf" className="border border-slate-700 hover:border-blue-500 bg-slate-900/50 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-md relative z-50 pointer-events-auto flex items-center gap-2 cursor-pointer">
+                <a href="/resume_v2.pdf" download="Ankush_Chaurasiya_Resume.pdf" className="border border-slate-700 hover:border-blue-500 bg-slate-900/50 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-md relative z-50 pointer-events-auto flex items-center gap-2 cursor-pointer">
                   Download CV <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 </a>
               </div>
