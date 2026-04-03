@@ -362,6 +362,25 @@ export default function App() {
           </div>
         </section>
 
+        {/* EXPERIENCE SECTION */}
+        <section className="experience-section min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto items-end text-right">
+          <div className="animate-text max-w-3xl w-full">
+            <h2 className="text-5xl md:text-7xl font-black mb-10 tracking-tight text-white">Professional<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Experience.</span></h2>
+            <TiltCard className="bg-[#0f172a]/40 backdrop-blur-2xl p-10 rounded-3xl border border-slate-800 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:border-blue-500/50 transition-colors duration-500 text-left w-full group pointer-events-auto">
+              <div className="flex justify-between items-start mb-6 flex-col md:flex-row gap-4 relative z-20">
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">Full Stack Developer</h3>
+                  <p className="text-blue-400 text-lg font-medium">Incubation Master, Bhopal</p>
+                </div>
+                <span className="px-4 py-2 bg-blue-500/10 text-blue-300 rounded-full text-sm font-semibold border border-blue-500/20">April 2025 - Present</span>
+              </div>
+              <p className="text-slate-300 text-lg leading-relaxed font-light relative z-20">
+                Architecting scalable MERN applications, integrating AI-driven features to automate tasks, and optimizing complex database queries using MongoDB & Firebase to significantly accelerate development workflows.
+              </p>
+            </TiltCard>
+          </div>
+        </section>
+
         {/* GITHUB GRAPH SECTION */}
         <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto relative z-20 pointer-events-auto">
           <div className="animate-text mb-12 text-center md:text-left">
@@ -491,15 +510,12 @@ export default function App() {
             {projects.map((proj, idx) => (
               <div key={idx} className="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group mb-16 animate-timeline-item w-full">
                 
-                {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#030712] bg-slate-800 group-hover:bg-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-500 z-30">
                   <div className="w-3 h-3 bg-slate-400 group-hover:bg-white rounded-full transition-colors"></div>
                 </div>
 
-                {/* Empty space for desktop layout */}
                 <div className="hidden md:block w-[calc(50%-3rem)]"></div>
 
-                {/* Content Card */}
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] ml-auto md:ml-0 cursor-pointer" onClick={() => setModalData(proj)}>
                   <TiltCard className="bg-[#0f172a]/40 backdrop-blur-xl p-8 rounded-3xl border border-slate-800 group-hover:border-blue-500/50 transition-colors h-full w-full pointer-events-auto shadow-2xl">
                     <div className="relative z-20 pointer-events-none">
