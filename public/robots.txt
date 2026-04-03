@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfolio-rose-five-59.vercel.app/sitemap.xml
